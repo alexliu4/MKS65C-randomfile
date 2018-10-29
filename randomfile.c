@@ -28,7 +28,7 @@ int main(){
     printf("The %dth element in array: %lu\n", i, arr[i]);
   }
 
-  //first file 
+  //first file <- only create and write
   int file1 = open("file.txt", O_CREAT | O_WRONLY,0777);
   printf("\nWriting numbers to file.txt\n");
   write(file1, arr, sizeof(arr));
